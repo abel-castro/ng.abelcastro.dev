@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng.abelcastro.dev';
+
+  currentYear: number;
+
+  constructor() {
+    const currentDate = new Date();
+    this.currentYear = currentDate.getFullYear();
+  }
 }

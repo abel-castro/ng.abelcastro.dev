@@ -1,1 +1,69 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import 'variables.scss';
+
+
+html,
+body {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: $my-yellow-secondary;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: $my-yellow-primary;
+}
+
+body {
+    background-color: $background-black;
+    color: white;
+}
+
+@media screen and (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+        color: black;
+    }
+}
+
+#main-toolbar {
+    background-color: $background-black;
+
+    #page-title {
+        color: white;
+        font-size: 2.0rem;
+    }
+
+
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: auto;
+    max-width: 680px;
+    padding: 0 1rem;
+}
+
+.post-container img {
+    width: 100%;
+}
+
+code {
+    font-size: 1rem !important;
+}
+
+#the-footer {
+    padding-bottom: 3rem;
+    text-align: center;
+    font-size: 0.875rem;
+    color: $my-grey;
+}
