@@ -6,6 +6,7 @@ services:
     container_name: ng-abelcastro-dev
     volumes:
       - ./dist:/usr/share/nginx/html
+
     ports:
       - "80:80"
       - "443:443"
@@ -18,5 +19,6 @@ services:
     depends_on:
       - angular-app
     volumes:
+      - ./dist:/usr/share/nginx/html
       - /etc/letsencrypt
     command: certonly --webroot --webroot-path=/usr/share/nginx/html --email cert@abelcastro.dev --agree-tos --no-eff-email -d ng.abelcastro.dev
