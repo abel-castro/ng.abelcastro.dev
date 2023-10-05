@@ -1,0 +1,27 @@
+version: '3.7'
+
+services:
+  angular-app:
+    image: ng-abelcastro-dev
+    container_name: ng-abelcastro-dev
+    volumes:
+      - ./dist:/usr/share/nginx/html
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      - NGINX_HOST=ng.abelcastro.dev
+
+  certbot:
+    image: certbot/certbot
+    container_name: certbot
+    depends_on:
+      - angular-app
+    volumes:
+      - /etc/letsencrypt
+    command: certonly --webroot --webroot-path=/usr/share/nginx/html --email cert@abelcastro.dev --agree-tos --no-eff-email -d ng.abelcastro.dev
+
+networks:
+  default:
+    external:
+      name: bridge
