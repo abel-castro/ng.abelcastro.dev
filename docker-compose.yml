@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   angular-app:
-    image: ng-abelcastro-dev
+    image: nginx
     container_name: ng-abelcastro-dev
     volumes:
       - ./dist:/usr/share/nginx/html
