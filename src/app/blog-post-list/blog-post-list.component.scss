@@ -26,3 +26,17 @@ hr.post-separator::after {
     padding: 1rem;
     background-color: #212529;
 }
+
+.post-date{
+    font-weight: bold;
+}
+
+.post-tag{
+    border-radius: 50rem;
+    background-color: white;
+    color: #212529;
+    padding: 0.35em 0.65em;
+    font-size: 0.75em;
+    font-weight: 700;
+    margin-right: 4px;
+}
