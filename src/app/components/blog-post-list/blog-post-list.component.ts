@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { BlogPostsService } from '../blog-posts.service';
+import { BlogPostsService } from '../../services/blog-posts.service';
+import { Post } from '../../models/post.model';
 
 @Component({
   selector: 'app-blog-post-list',
@@ -7,7 +8,7 @@ import { BlogPostsService } from '../blog-posts.service';
   styleUrls: ['./blog-post-list.component.scss']
 })
 export class BlogPostListComponent {
-  posts: any[] = [];
+  posts: Post[] = [];
 
   constructor(private blogPostsService: BlogPostsService) {}
 

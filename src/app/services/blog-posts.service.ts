@@ -1,7 +1,7 @@
 import { Injectable, isDevMode } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
-import { POST_SAMPLE_DATA } from './posts-sample-data';
+import { POST_SAMPLE_DATA } from '../posts-sample-data';
 
 
 @Injectable({

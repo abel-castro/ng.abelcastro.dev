@@ -1,9 +1,0 @@
-<div *ngFor="let post of posts" class="post-container">
-    <h2 class="post-title">{{ post.title }}</h2>
-    <p class="post-date">{{ post.date }}</p>
-    <p class="post-tags">
-        <span *ngFor="let tag of post.tags" class="post-tag">{{ tag.name }}</span>
-    </p>
-    <markdown [data]="post.content"></markdown>
-    <hr class="post-separator">
-</div>
