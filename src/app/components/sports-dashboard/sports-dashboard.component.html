@@ -1,9 +1,9 @@
 <div id="sports-dashboard-container">
-    <div *ngFor="let league of data" class="table-container">
-        <h3>
-            <img class="league-logo" src="{{ league.logo}}">
-            {{ league.name }}
-        </h3>
-        <app-league-table [dataSource]="league.teams"></app-league-table>
-    </div>
+  <div *ngFor="let league of data" class="table-container">
+    <h3>
+      <img class="league-logo" src="{{ league.logo }}" />
+      {{ league.name }}
+    </h3>
+    <app-league-table [dataSource]="league.teams"></app-league-table>
+  </div>
 </div>

@@ -4,6 +4,7 @@ This project is the angular frontend for my personal blog https://abelcastro.dev
 When it is done, it should be reachable in the url https://ng.abelcastro.dev
 
 Featureed libraries:
+
 - https://www.npmjs.com/package/ngx-markdown
 - https://angular.io/
 

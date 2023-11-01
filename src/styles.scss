@@ -1,80 +1,77 @@
-@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
-@import 'variables.scss';
-
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "variables.scss";
 
 html,
 body {
-    height: 100%;
-    font-family: 'Open Sans', sans-serif;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
 }
 
 a {
-    text-decoration: none;
-    color: $my-yellow-secondary;
-    transition: color 0.2s ease;
+  text-decoration: none;
+  color: $my-yellow-secondary;
+  transition: color 0.2s ease;
 }
 
 a:hover {
-    color: $my-yellow-primary;
+  color: $my-yellow-primary;
 }
 
 body {
-    background-color: $background-black;
-    color: white;
+  background-color: $background-black;
+  color: white;
 }
 
 @media screen and (prefers-color-scheme: light) {
-    body {
-        background-color: white;
-        color: black;
-    }
+  body {
+    background-color: white;
+    color: black;
+  }
 }
 
 #main-toolbar {
-    background-color: $background-black;
-    #page-title {
-        font-size: 2.0rem;
+  background-color: $background-black;
+  #page-title {
+    font-size: 2rem;
+  }
+  a {
+    color: white;
+    &:hover {
+      color: $my-yellow-primary;
     }
-    a{
-        color: white;
-        &:hover{
-            color: $my-yellow-primary;
-        }
+  }
+
+  #submenu {
+    margin-left: auto;
+    .submenu-link {
+      font-size: 1rem;
     }
-
-    #submenu{
-        margin-left: auto;
-        .submenu-link{
-            font-size: 1rem;
-        }
-    }
-
-
+  }
 }
 
 .content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-    width: auto;
-    max-width: 680px;
-    padding: 0 1rem;
+  width: auto;
+  max-width: 680px;
+  padding: 0 1rem;
 }
 
 .post-container img {
-    width: 100%;
+  width: 100%;
 }
 
 code {
-    font-size: 1rem !important;
+  font-size: 1rem !important;
 }
 
 #the-footer {
-    padding-bottom: 3rem;
-    text-align: center;
-    font-size: 0.875rem;
-    color: $my-grey;
+  padding-bottom: 3rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: $my-grey;
 }

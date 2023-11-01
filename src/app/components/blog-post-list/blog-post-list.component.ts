@@ -5,7 +5,7 @@ import { Post } from '../../models/post.model';
 @Component({
   selector: 'app-blog-post-list',
   templateUrl: './blog-post-list.component.html',
-  styleUrls: ['./blog-post-list.component.scss']
+  styleUrls: ['./blog-post-list.component.scss'],
 })
 export class BlogPostListComponent {
   posts: Post[] = [];
@@ -13,7 +13,7 @@ export class BlogPostListComponent {
   constructor(private blogPostsService: BlogPostsService) {}
 
   ngOnInit(): void {
-    this.blogPostsService.getPosts().subscribe(posts => {
+    this.blogPostsService.getPosts().subscribe((posts) => {
       this.posts = posts;
     });
   }

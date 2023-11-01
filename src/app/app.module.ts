@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
-import { MarkdownModule } from 'ngx-markdown'; 
+import { MarkdownModule } from 'ngx-markdown';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,7 +11,6 @@ import { MaterialModule } from './components/material/material.module';
 import { SportsDashboardComponent } from './components/sports-dashboard/sports-dashboard.component';
 import { MatTableModule } from '@angular/material/table';
 import { LeagueTableComponent } from './components/league-table/league-table.component';
-
 
 @NgModule({
   declarations: [
@@ -27,9 +26,9 @@ import { LeagueTableComponent } from './components/league-table/league-table.com
     MarkdownModule.forRoot(),
     MaterialModule,
     BrowserAnimationsModule,
-    MatTableModule
+    MatTableModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

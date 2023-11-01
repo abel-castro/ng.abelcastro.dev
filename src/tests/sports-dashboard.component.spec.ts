@@ -8,7 +8,7 @@ describe('SportsDashboardComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [SportsDashboardComponent]
+      declarations: [SportsDashboardComponent],
     });
     fixture = TestBed.createComponent(SportsDashboardComponent);
     component = fixture.componentInstance;

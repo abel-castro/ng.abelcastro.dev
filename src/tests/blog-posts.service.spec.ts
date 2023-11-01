@@ -2,7 +2,6 @@ import { TestBed } from '@angular/core/testing';
 
 import { BlogPostsService } from '../app/services/blog-posts.service';
 
-
 describe('BlogPostService', () => {
   let service: BlogPostsService;
 
