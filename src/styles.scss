@@ -61,6 +61,17 @@ body {
   padding: 0 1rem;
 }
 
+/* Responsive styles for screens smaller than 680px */
+@media screen and (max-width: 680px) {
+  .content {
+    display: block;
+  }
+
+  .container {
+    padding: 0.25rem;
+  }
+}
+
 .post-container img {
   width: 100%;
 }
