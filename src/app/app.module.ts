@@ -11,6 +11,10 @@ import { MaterialModule } from './components/material/material.module';
 import { SportsDashboardComponent } from './components/sports-dashboard/sports-dashboard.component';
 import { MatTableModule } from '@angular/material/table';
 import { LeagueTableComponent } from './components/league-table/league-table.component';
+import { ResultComponent } from './components/result/result.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -18,6 +22,7 @@ import { LeagueTableComponent } from './components/league-table/league-table.com
     BlogPostListComponent,
     SportsDashboardComponent,
     LeagueTableComponent,
+    ResultComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,6 +32,9 @@ import { LeagueTableComponent } from './components/league-table/league-table.com
     MaterialModule,
     BrowserAnimationsModule,
     MatTableModule,
+    MatCardModule,
+    MatChipsModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

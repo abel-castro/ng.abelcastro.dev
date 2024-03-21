@@ -1,3 +1,358 @@
+import { Result } from './models/sports.model';
+
+const PREMIER_LEAGUE_RESULTS: Result[] = [
+  {
+    homeTeam: 'Tottenham',
+    awayTeam: 'Arsenal',
+    homeScore: 2,
+    awayScore: 1,
+  },
+  {
+    homeTeam: 'Manchester City',
+    awayTeam: 'Liverpool',
+    homeScore: 1,
+    awayScore: 1,
+  },
+  {
+    homeTeam: 'Manchester City',
+    awayTeam: 'Tottenham',
+    homeScore: 3,
+    awayScore: 2,
+  },
+  {
+    homeTeam: 'Arsenal',
+    awayTeam: 'Manchester United',
+    homeScore: 2,
+    awayScore: 0,
+  },
+  {
+    homeTeam: 'Chelsea',
+    awayTeam: 'Liverpool',
+    homeScore: 0,
+    awayScore: 1,
+  },
+  {
+    homeTeam: 'Manchester United',
+    awayTeam: 'Chelsea',
+    homeScore: 1,
+    awayScore: 1,
+  },
+  {
+    homeTeam: 'Liverpool',
+    awayTeam: 'Tottenham',
+    homeScore: 2,
+    awayScore: 2,
+  },
+  {
+    homeTeam: 'Arsenal',
+    awayTeam: 'Manchester City',
+    homeScore: 1,
+    awayScore: 2,
+  },
+  {
+    homeTeam: 'Tottenham',
+    awayTeam: 'Chelsea',
+    homeScore: 3,
+    awayScore: 1,
+  },
+  {
+    homeTeam: 'Arsenal',
+    awayTeam: 'Tottenham',
+    homeScore: 2,
+    awayScore: 2,
+  },
+];
+
+const LA_LIGA_RESULTS: Result[] = [
+  {
+    homeTeam: 'Real Madrid',
+    awayTeam: 'Barcelona',
+    homeScore: 2,
+    awayScore: 1,
+  },
+  {
+    homeTeam: 'Barcelona',
+    awayTeam: 'Atletico Madrid',
+    homeScore: 1,
+    awayScore: 0,
+  },
+  {
+    homeTeam: 'Real Madrid',
+    awayTeam: 'Atletico Madrid',
+    homeScore: 3,
+    awayScore: 2,
+  },
+  {
+    homeTeam: 'Atletico Madrid',
+    awayTeam: 'Real Madrid',
+    homeScore: 1,
+    awayScore: 1,
+  },
+  {
+    homeTeam: 'Barcelona',
+    awayTeam: 'Real Madrid',
+    homeScore: 2,
+    awayScore: 2,
+  },
+  {
+    homeTeam: 'Real Madrid',
+    awayTeam: 'Sevilla',
+    homeScore: 2,
+    awayScore: 0,
+  },
+  {
+    homeTeam: 'Atletico Madrid',
+    awayTeam: 'Sevilla',
+    homeScore: 1,
+    awayScore: 1,
+  },
+  {
+    homeTeam: 'Barcelona',
+    awayTeam: 'Sevilla',
+    homeScore: 3,
+    awayScore: 1,
+  },
+  {
+    homeTeam: 'Sevilla',
+    awayTeam: 'Real Madrid',
+    homeScore: 1,
+    awayScore: 2,
+  },
+  {
+    homeTeam: 'Sevilla',
+    awayTeam: 'Atletico Madrid',
+    homeScore: 0,
+    awayScore: 1,
+  },
+];
+
+const SERIE_A_LEAGUE_RESULTS: Result[] = [
+  {
+    homeTeam: 'Inter Milan',
+    awayTeam: 'AC Milan',
+    homeScore: 2,
+    awayScore: 1,
+  },
+  {
+    homeTeam: 'Juventus',
+    awayTeam: 'AS Roma',
+    homeScore: 1,
+    awayScore: 0,
+  },
+  {
+    homeTeam: 'Napoli',
+    awayTeam: 'Juventus',
+    homeScore: 3,
+    awayScore: 2,
+  },
+  {
+    homeTeam: 'AC Milan',
+    awayTeam: 'Inter Milan',
+    homeScore: 1,
+    awayScore: 1,
+  },
+  {
+    homeTeam: 'AS Roma',
+    awayTeam: 'Inter Milan',
+    homeScore: 2,
+    awayScore: 2,
+  },
+  {
+    homeTeam: 'Inter Milan',
+    awayTeam: 'Lazio',
+    homeScore: 2,
+    awayScore: 0,
+  },
+  {
+    homeTeam: 'Napoli',
+    awayTeam: 'Lazio',
+    homeScore: 1,
+    awayScore: 1,
+  },
+  {
+    homeTeam: 'AS Roma',
+    awayTeam: 'Lazio',
+    homeScore: 3,
+    awayScore: 1,
+  },
+  {
+    homeTeam: 'Lazio',
+    awayTeam: 'Inter Milan',
+    homeScore: 1,
+    awayScore: 2,
+  },
+  {
+    homeTeam: 'Lazio',
+    awayTeam: 'Napoli',
+    homeScore: 0,
+    awayScore: 1,
+  },
+];
+
+const AUSTRIAN_BUNDESLIGA_RESULTS: Result[] = [
+  {
+    homeTeam: 'Red Bull Salzburg',
+    awayTeam: 'LASK',
+    homeScore: 3,
+    awayScore: 1,
+  },
+  {
+    homeTeam: 'SK Rapid Wien',
+    awayTeam: 'Austria Wien',
+    homeScore: 2,
+    awayScore: 0,
+  },
+  {
+    homeTeam: 'FC Red Bull Salzburg',
+    awayTeam: 'SK Rapid Wien',
+    homeScore: 1,
+    awayScore: 1,
+  },
+  {
+    homeTeam: 'Austria Wien',
+    awayTeam: 'LASK',
+    homeScore: 2,
+    awayScore: 2,
+  },
+  {
+    homeTeam: 'LASK',
+    awayTeam: 'SK Rapid Wien',
+    homeScore: 0,
+    awayScore: 1,
+  },
+  {
+    homeTeam: 'Austria Wien',
+    awayTeam: 'Red Bull Salzburg',
+    homeScore: 1,
+    awayScore: 2,
+  },
+];
+const GERMAN_BUNDESLIGA_RESULTS: Result[] = [
+  {
+    homeTeam: 'Bayern Munich',
+    awayTeam: 'Borussia Dortmund',
+    homeScore: 3,
+    awayScore: 2,
+  },
+  {
+    homeTeam: 'RB Leipzig',
+    awayTeam: 'Borussia Monchengladbach',
+    homeScore: 2,
+    awayScore: 1,
+  },
+  {
+    homeTeam: 'Borussia Dortmund',
+    awayTeam: 'RB Leipzig',
+    homeScore: 1,
+    awayScore: 1,
+  },
+  {
+    homeTeam: 'Borussia Monchengladbach',
+    awayTeam: 'Bayern Munich',
+    homeScore: 1,
+    awayScore: 2,
+  },
+  {
+    homeTeam: 'Bayern Munich',
+    awayTeam: 'RB Leipzig',
+    homeScore: 2,
+    awayScore: 0,
+  },
+  {
+    homeTeam: 'Borussia Dortmund',
+    awayTeam: 'Borussia Monchengladbach',
+    homeScore: 2,
+    awayScore: 2,
+  },
+  {
+    homeTeam: 'RB Leipzig',
+    awayTeam: 'Borussia Monchengladbach',
+    homeScore: 3,
+    awayScore: 1,
+  },
+  {
+    homeTeam: 'Bayern Munich',
+    awayTeam: 'Borussia Dortmund',
+    homeScore: 4,
+    awayScore: 1,
+  },
+  {
+    homeTeam: 'Borussia Monchengladbach',
+    awayTeam: 'Borussia Dortmund',
+    homeScore: 1,
+    awayScore: 3,
+  },
+  {
+    homeTeam: 'RB Leipzig',
+    awayTeam: 'Bayern Munich',
+    homeScore: 1,
+    awayScore: 2,
+  },
+];
+
+const FRENCH_LIGUE_1_RESULTS: Result[] = [
+  {
+    homeTeam: 'Paris Saint-Germain',
+    awayTeam: 'Olympique Marseille',
+    homeScore: 2,
+    awayScore: 0,
+  },
+  {
+    homeTeam: 'Lyon',
+    awayTeam: 'Paris Saint-Germain',
+    homeScore: 1,
+    awayScore: 1,
+  },
+  {
+    homeTeam: 'Marseille',
+    awayTeam: 'Lyon',
+    homeScore: 2,
+    awayScore: 1,
+  },
+  {
+    homeTeam: 'Paris Saint-Germain',
+    awayTeam: 'Lille',
+    homeScore: 3,
+    awayScore: 1,
+  },
+  {
+    homeTeam: 'Monaco',
+    awayTeam: 'Paris Saint-Germain',
+    homeScore: 1,
+    awayScore: 2,
+  },
+  {
+    homeTeam: 'Lille',
+    awayTeam: 'Marseille',
+    homeScore: 1,
+    awayScore: 0,
+  },
+  {
+    homeTeam: 'Marseille',
+    awayTeam: 'Paris Saint-Germain',
+    homeScore: 2,
+    awayScore: 2,
+  },
+  {
+    homeTeam: 'Lille',
+    awayTeam: 'Monaco',
+    homeScore: 2,
+    awayScore: 2,
+  },
+  {
+    homeTeam: 'Monaco',
+    awayTeam: 'Lyon',
+    homeScore: 2,
+    awayScore: 1,
+  },
+  {
+    homeTeam: 'Lyon',
+    awayTeam: 'Lille',
+    homeScore: 1,
+    awayScore: 0,
+  },
+];
+
 export const LEAGUES_SAMPLE_DATA = [
   {
     name: 'Premier League',
@@ -125,6 +480,7 @@ export const LEAGUES_SAMPLE_DATA = [
       },
     ],
     logo: 'https://media-4.api-sports.io/football/leagues/39.png',
+    results: PREMIER_LEAGUE_RESULTS,
   },
   {
     name: 'La Liga',
@@ -252,6 +608,7 @@ export const LEAGUES_SAMPLE_DATA = [
       },
     ],
     logo: 'https://media-4.api-sports.io/football/leagues/140.png',
+    results: LA_LIGA_RESULTS,
   },
   {
     name: 'Serie A',
@@ -379,6 +736,7 @@ export const LEAGUES_SAMPLE_DATA = [
       },
     ],
     logo: 'https://media-4.api-sports.io/football/leagues/71.png',
+    results: SERIE_A_LEAGUE_RESULTS,
   },
   {
     name: 'German Bundesliga',
@@ -494,85 +852,7 @@ export const LEAGUES_SAMPLE_DATA = [
       },
     ],
     logo: 'https://media-4.api-sports.io/football/leagues/78.png',
-  },
-  {
-    name: 'Austrian Bundesliga',
-    slug: 'austrian_bundesliga',
-    teams: [
-      {
-        position: 1,
-        name: 'Sturm Graz',
-        points: 27,
-        logo: 'https://media-4.api-sports.io/football/teams/637.png',
-      },
-      {
-        position: 2,
-        name: 'Red Bull Salzburg',
-        points: 26,
-        logo: 'https://media-4.api-sports.io/football/teams/571.png',
-      },
-      {
-        position: 3,
-        name: 'Lask Linz',
-        points: 22,
-        logo: 'https://media-4.api-sports.io/football/teams/1026.png',
-      },
-      {
-        position: 4,
-        name: 'Austria Klagenfurt',
-        points: 21,
-        logo: 'https://media-4.api-sports.io/football/teams/1405.png',
-      },
-      {
-        position: 5,
-        name: 'TSV Hartberg',
-        points: 19,
-        logo: 'https://media-4.api-sports.io/football/teams/1072.png',
-      },
-      {
-        position: 6,
-        name: 'Rapid Vienna',
-        points: 15,
-        logo: 'https://media-4.api-sports.io/football/teams/781.png',
-      },
-      {
-        position: 7,
-        name: 'Austria Vienna',
-        points: 15,
-        logo: 'https://media-4.api-sports.io/football/teams/601.png',
-      },
-      {
-        position: 8,
-        name: 'Wolfsberger AC',
-        points: 14,
-        logo: 'https://media-4.api-sports.io/football/teams/1025.png',
-      },
-      {
-        position: 9,
-        name: 'SCR Altach',
-        points: 13,
-        logo: 'https://media-4.api-sports.io/football/teams/618.png',
-      },
-      {
-        position: 10,
-        name: 'FC BW Linz',
-        points: 13,
-        logo: 'https://media-4.api-sports.io/football/teams/1394.png',
-      },
-      {
-        position: 11,
-        name: 'WSG Wattens',
-        points: 5,
-        logo: 'https://media-4.api-sports.io/football/teams/1398.png',
-      },
-      {
-        position: 12,
-        name: 'Austria Lustenau',
-        points: 3,
-        logo: 'https://media-4.api-sports.io/football/teams/1399.png',
-      },
-    ],
-    logo: 'https://media-4.api-sports.io/football/leagues/218.png',
+    results: GERMAN_BUNDESLIGA_RESULTS,
   },
   {
     name: 'Ligue 1',
@@ -688,5 +968,86 @@ export const LEAGUES_SAMPLE_DATA = [
       },
     ],
     logo: 'https://media-4.api-sports.io/football/leagues/61.png',
+    results: FRENCH_LIGUE_1_RESULTS,
+  },
+  {
+    name: 'Austrian Bundesliga',
+    slug: 'austrian_bundesliga',
+    teams: [
+      {
+        position: 1,
+        name: 'Sturm Graz',
+        points: 27,
+        logo: 'https://media-4.api-sports.io/football/teams/637.png',
+      },
+      {
+        position: 2,
+        name: 'Red Bull Salzburg',
+        points: 26,
+        logo: 'https://media-4.api-sports.io/football/teams/571.png',
+      },
+      {
+        position: 3,
+        name: 'Lask Linz',
+        points: 22,
+        logo: 'https://media-4.api-sports.io/football/teams/1026.png',
+      },
+      {
+        position: 4,
+        name: 'Austria Klagenfurt',
+        points: 21,
+        logo: 'https://media-4.api-sports.io/football/teams/1405.png',
+      },
+      {
+        position: 5,
+        name: 'TSV Hartberg',
+        points: 19,
+        logo: 'https://media-4.api-sports.io/football/teams/1072.png',
+      },
+      {
+        position: 6,
+        name: 'Rapid Vienna',
+        points: 15,
+        logo: 'https://media-4.api-sports.io/football/teams/781.png',
+      },
+      {
+        position: 7,
+        name: 'Austria Vienna',
+        points: 15,
+        logo: 'https://media-4.api-sports.io/football/teams/601.png',
+      },
+      {
+        position: 8,
+        name: 'Wolfsberger AC',
+        points: 14,
+        logo: 'https://media-4.api-sports.io/football/teams/1025.png',
+      },
+      {
+        position: 9,
+        name: 'SCR Altach',
+        points: 13,
+        logo: 'https://media-4.api-sports.io/football/teams/618.png',
+      },
+      {
+        position: 10,
+        name: 'FC BW Linz',
+        points: 13,
+        logo: 'https://media-4.api-sports.io/football/teams/1394.png',
+      },
+      {
+        position: 11,
+        name: 'WSG Wattens',
+        points: 5,
+        logo: 'https://media-4.api-sports.io/football/teams/1398.png',
+      },
+      {
+        position: 12,
+        name: 'Austria Lustenau',
+        points: 3,
+        logo: 'https://media-4.api-sports.io/football/teams/1399.png',
+      },
+    ],
+    logo: 'https://media-4.api-sports.io/football/leagues/218.png',
+    results: AUSTRIAN_BUNDESLIGA_RESULTS,
   },
 ];

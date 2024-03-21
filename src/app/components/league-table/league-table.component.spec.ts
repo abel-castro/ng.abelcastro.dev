@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LeagueTableComponent } from '../app/components/league-table/league-table.component';
+import { LeagueTableComponent } from './league-table.component';
 
 describe('LeagueTableComponent', () => {
   let component: LeagueTableComponent;

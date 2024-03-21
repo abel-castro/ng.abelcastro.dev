@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SportsDashboardComponent } from '../app/components/sports-dashboard/sports-dashboard.component';
+import { SportsDashboardComponent } from './sports-dashboard.component';
 
 describe('SportsDashboardComponent', () => {
   let component: SportsDashboardComponent;

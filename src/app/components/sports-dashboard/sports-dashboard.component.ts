@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { League } from '../../models/team.model';
+import { League } from '../../models/sports.model';
 import { LeaguesService } from 'src/app/services/leagues.service';
 
 @Component({

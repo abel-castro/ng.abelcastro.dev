@@ -2,7 +2,7 @@ import { Injectable, isDevMode } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { LEAGUES_SAMPLE_DATA } from '../leagues-sample-data';
-import { League } from '../models/team.model';
+import { League } from '../models/sports.model';
 
 @Injectable({
   providedIn: 'root',
