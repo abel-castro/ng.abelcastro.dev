@@ -27,6 +27,6 @@
     class="table-row"
   ></mat-row>
 </table>
-<button (click)="toggleAllRows()">
-  {{ allRowsDisplayed ? "Show less" : "Show all" }}
+<button mat-icon-button (click)="toggleAllRows()" aria-label="Toggle all rows">
+  <mat-icon>{{ allRowsDisplayed ? "remove" : "add" }}</mat-icon>
 </button>

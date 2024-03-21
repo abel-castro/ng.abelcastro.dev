@@ -1,0 +1,37 @@
+.results-card {
+  width: 340px;
+  border-radius: 4px 4px 0 0; // to match with the table border-radius
+  padding-bottom: 10px;
+
+  .results-title {
+    color: black;
+    padding: 10px;
+    justify-content: center;
+    .league-logo {
+      max-width: 24px;
+      vertical-align: middle;
+    }
+  }
+
+  .results-content {
+    color: black;
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: 1fr 0.2fr 1fr;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    .home-team {
+      grid-column: 1;
+    }
+    .score {
+      grid-column: 2;
+      mat-chip {
+        height: 28px;
+      }
+    }
+    .away-team {
+      grid-column: 3;
+    }
+  }
+}

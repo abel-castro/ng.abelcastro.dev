@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Team } from '../../models/team.model';
+import { Team } from '../../models/sports.model';
+
 
 @Component({
   selector: 'app-league-table',
@@ -21,7 +22,7 @@ export class LeagueTableComponent implements OnInit {
     this._originalDataSource = this.dataSource;
     this.dataSource = this.dataSource.slice(
       0,
-      this.initialAmountTeamsDisplayed,
+      this.initialAmountTeamsDisplayed
     );
   }
 
@@ -29,7 +30,7 @@ export class LeagueTableComponent implements OnInit {
     if (this.allRowsDisplayed) {
       this.dataSource = this.dataSource.slice(
         0,
-        this.initialAmountTeamsDisplayed,
+        this.initialAmountTeamsDisplayed
       );
       this.allRowsDisplayed = false;
     } else {

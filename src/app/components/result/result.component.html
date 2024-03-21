@@ -1,0 +1,17 @@
+<mat-card class="results-card">
+  <mat-card-header class="results-title">
+    <mat-card-title>
+      <img class="league-logo" src="{{ dataSource.logo }}" />
+      {{ dataSource.name }}
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="results-content">
+    <ng-container *ngFor="let game of dataSource.results">
+      <div class="home-team">{{ game.homeTeam }}</div>
+      <div class="score">
+        <mat-chip>{{ game.homeScore }} - {{ game.awayScore }}</mat-chip>
+      </div>
+      <div class="away-team">{{ game.awayTeam }}</div>
+    </ng-container>
+  </mat-card-content>
+</mat-card>

@@ -1,5 +1,8 @@
 .league-table {
   width: 100%;
+  overflow: hidden;
+  border-radius: 0px 0 4px 4px; // to match with the card border-radius
+
   &:hover {
     cursor: pointer;
   }
@@ -21,8 +24,8 @@
 
 .table-row,
 .table-header {
-  line-height: 30px;
-  min-height: 30px;
+  line-height: 34px;
+  min-height: 34px;
 }
 
 .table-header {
