@@ -7,6 +7,14 @@ export interface Post {
   tags: Tag[];
 }
 
+export type PostsAPIResponse = {
+  count: number;
+  next: string;
+  previous: string | null;
+  results: Post[];
+};
+
+
 export interface Tag {
   name: string;
 }

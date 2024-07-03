@@ -14,7 +14,7 @@ export class BlogPostListComponent {
 
   ngOnInit(): void {
     this.blogPostsService.getPosts().subscribe((posts) => {
-      this.posts = posts;
+      this.posts = posts.results;
     });
   }
 }

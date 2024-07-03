@@ -2,20 +2,21 @@ import { Injectable, isDevMode } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { POST_SAMPLE_DATA } from '../posts-sample-data';
+import { PostsAPIResponse } from '../models/post.model';
 
 @Injectable({
   providedIn: 'root',
 })
 export class BlogPostsService {
-  private apiUrl = 'https://abelcastro.dev/api/posts/';
+  private apiUrl = 'https://abelcastro.dev/api/posts/?page_size=100';
 
   constructor(private http: HttpClient) {}
 
-  getPosts(): Observable<any[]> {
+  getPosts(): Observable<PostsAPIResponse> {
     if (isDevMode()) {
       return of(POST_SAMPLE_DATA);
     } else {
-      return this.http.get<any[]>(this.apiUrl);
+      return this.http.get<PostsAPIResponse>(this.apiUrl);
     }
   }
 }
