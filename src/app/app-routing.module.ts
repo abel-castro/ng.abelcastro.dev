@@ -4,8 +4,7 @@ import { SportsDashboardComponent } from './components/sports-dashboard/sports-d
 import { BlogPostListComponent } from './components/blog-post-list/blog-post-list.component';
 
 const routes: Routes = [
-  { path: '', component: BlogPostListComponent },
-  { path: 'sports-dashboard', component: SportsDashboardComponent },
+  { path: '', component: SportsDashboardComponent },
 ];
 
 @NgModule({
