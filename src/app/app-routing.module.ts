@@ -5,6 +5,7 @@ import { BlogPostListComponent } from './components/blog-post-list/blog-post-lis
 
 const routes: Routes = [
   { path: '', component: SportsDashboardComponent },
+  { path: 'sports-dashboard', component: SportsDashboardComponent },
 ];
 
 @NgModule({
