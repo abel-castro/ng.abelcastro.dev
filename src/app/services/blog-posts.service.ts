@@ -8,7 +8,7 @@ import { PostsAPIResponse } from '../models/post.model';
   providedIn: 'root',
 })
 export class BlogPostsService {
-  private apiUrl = 'https://abelcastro.dev/api/posts/?page_size=100';
+  private apiUrl = 'https://core.abelcastro.dev/api/posts/?page_size=100';
 
   constructor(private http: HttpClient) {}
 

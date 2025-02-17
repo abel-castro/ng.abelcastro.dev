@@ -8,7 +8,7 @@ import { League } from '../models/sports.model';
   providedIn: 'root',
 })
 export class LeaguesService {
-  private apiUrl = 'https://abelcastro.dev/api/sports/standings/';
+  private apiUrl = 'https://core.abelcastro.dev/api/sports/standings/';
 
   constructor(private http: HttpClient) {}
 
